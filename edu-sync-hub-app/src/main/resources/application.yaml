@@ -1,0 +1,20 @@
+logging:
+  level:
+    .: error
+    org.springframework: ERROR
+    com.edusynchub: ERROR
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/edusynchub
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  main:
+    banner-mode: "on"
+    web-application-type: servlet
+
+server:
+  email: edusynchub@gmail.com
